@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+  --van-card-font-size: 18px;
+  --van-card-padding: 15px;
+  --van-card-title-line-height: 30px;
+  /* --van-card-background-color: rgb(238, 238, 238); */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: aliceblue;
+}
