@@ -1,4 +1,3 @@
-
 <template>
   <div class="app">
     <header>
@@ -12,38 +11,65 @@
   </div>
 </template>
 
-
-
 <script lang="ts">
 import { ref } from "vue";
-import type Job from './types/Job';
-import type OrderTerm from './types/OrderTerm';
-import JobList from './components/JobsList.vue';
+import type Job from "./../types/Job";
+import type OrderTerm from "./../types/OrderTerm";
+import JobList from "./JobsList.vue";
 
 export default {
   components: {
-    JobList
+    JobList,
   },
   setup() {
     const jobs = ref<Job[]>([
-      { title: 'farm worker', location: 'lon lon ranch', salary: 30000, id: '1' },
-      { title: 'quarryman', location: 'death mountain', salary: 40000, id: '2' },
-      { title: 'flute player', location: 'the lost woods', salary: 35000, id: '3' },
-      { title: 'fisherman', location: 'lake hylia', salary: 21000, id: '4' },
-      { title: 'prison guard', location: 'gerudo valley', salary: 32000, id: '5' }
-    ])
-    const order = ref<OrderTerm>('title')
+      {
+        title: "farm worker",
+        location: "lon lon ranch",
+        salary: 30000,
+        description: "desc",
+        id: "1",
+      },
+      {
+        title: "quarryman",
+        location: "death mountain",
+        salary: 40000,
+        description: "desc",
+        id: "2",
+      },
+      {
+        title: "flute player",
+        location: "the lost woods",
+        salary: 35000,
+        description: "desc",
+        id: "3",
+      },
+      {
+        title: "fisherman",
+        location: "lake hylia",
+        salary: 21000,
+        description: "desc",
+        id: "4",
+      },
+      {
+        title: "prison guard",
+        location: "gerudo valley",
+        salary: 32000,
+        description: "desc",
+        id: "5",
+      },
+    ]);
+    const order = ref<OrderTerm>("title");
     const handleClick = (term: OrderTerm) => {
-      order.value = term
-    }
+      order.value = term;
+    };
     return {
       jobs,
       handleClick,
-      order
-    }
-  }
-}
-
+      order,
+    };
+  },
+};
 </script>
 
 <style scoped>

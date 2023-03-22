@@ -31,7 +31,7 @@ import { ref } from "vue";
 import { useRouter, RouterView, RouterLink } from "vue-router";
 import type RoutTerm from "./types/RouteTerm";
 import { useI18n } from "vue-i18n";
-import { changeLang } from "@/locales/i18n";
+import { changeLang } from "@/locales/i18n.js";
 export default {
   components: {
   },

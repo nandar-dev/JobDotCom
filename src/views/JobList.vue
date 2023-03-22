@@ -66,8 +66,8 @@ import { defineComponent, ref, watch, reactive, toRefs, onMounted, computed } fr
 import { useRouter } from 'vue-router'
 import axios from 'axios';
 import { Notify, Toast, Dialog } from 'vant';
-import type Job from '../types/Job';
-import type OrderTerm from '../types/OrderTerm';
+import type Job from './../types/Job';
+import type OrderTerm from './../types/OrderTerm';
 import Fab from "../element/Fab.vue";
 import Menu from "@/element/Menu.vue";
 
