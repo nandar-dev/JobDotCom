@@ -22,8 +22,8 @@
 </template>
 
 <script lang="ts">
-import router from '@/router';
-import { useRouter } from 'vue-router';
+import router from "@/router";
+import { useRouter } from "vue-router";
 export default {
   props: {
     show: {
@@ -32,14 +32,14 @@ export default {
   },
   emits: ["close"],
 
-  setup(context, emits) {
+  setup(context: any, emits: any) {
     const onClose = () => {
       emits.emit("close");
     };
 
-    const goRoute = (name: any)=>{
-        router.push(name)
-    }
+    const goRoute = (name: any) => {
+      router.push(name);
+    };
 
     return {
       onClose,
