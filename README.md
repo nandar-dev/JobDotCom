@@ -1,6 +1,7 @@
 # JobDotCom
 
-Basic CRUD operation , filter and sorting with Vant UI 3 and Typescript.
+JobDotCom is a web application that connects job seekers with potential employers. It provides a platform for users to create profiles, search for job opportunities, and apply for positions. This repository contains the source code and documentation for the JobDotCom project.
+
 
 ## Table of Contents
 - [Features](#features)
