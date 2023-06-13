@@ -1,6 +1,6 @@
 # JobDotCom
 
-![Design preview](https://upload.wikimedia.org/wikipedia/commons/7/73/Jdc-ss1.png)
+![Design preview](/src/assets/mockup.png)
 
 JobDotCom is a web application that connects job seekers with potential employers. It provides a platform for users to create profiles, search for job opportunities, and apply for positions. This repository contains the source code and documentation for the JobDotCom project.
 
